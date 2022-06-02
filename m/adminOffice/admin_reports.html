@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <meta name="google-signin-client_id" content="584175274872-hlf4ccq2q15ki7ua6h2sanijnind4lj9.apps.googleusercontent.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="/m/overflow.css">
+  <link rel="stylesheet" href="/m/nav_bar.css">
+  <link rel="stylesheet" href="/m/button_style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Office Reports</title>
+</head>
+<body>
+<section>
+  <nav class="blend">
+    <ul>
+      <li><a href="/m/adminOffice/admin.html">Home</a></li>
+      <li><a href="/m/adminOffice/admin_reports.html">Reports</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">About</a></li>
+      <script>
+        function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                console.log('User signed out.');
+                window.location.href = "https://m.tsh.edu.in";
+            });
+        }
+        function onLoad() {
+            gapi.load('auth2', function() {
+                gapi.auth2.init();
+            });
+        }
+      </script>
+      <li><a href="#" onclick="signOut();">Sign Out</a></li>
+      <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+    </ul>
+  </nav>
+</section>
+<div class="buttons">
+  <button class="fill" type="button" onclick="window.open('https://forms.gle/hapS6DDDDHPx419cA','_blank')">Work Done</button>
+</div>
+</body>
+</html>

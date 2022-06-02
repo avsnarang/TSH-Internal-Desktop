@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <link rel="stylesheet" href="/overflow.css">
+     <link rel="stylesheet" href="/nav_bar.css">
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="google-signin-client_id" content="584175274872-hlf4ccq2q15ki7ua6h2sanijnind4lj9.apps.googleusercontent.com">
+     <title>Science HoD Reports</title>
+     <link rel="stylesheet" href="/button_style.css">
+     <style>
+          h1{
+               font-family: "Times New Roman",serif;
+               text-align: center;
+          }
+          .test p{
+               font-family: "Calibri",sans-serif;
+               text-align: center;
+          }
+     </style>
+</head>
+<body>
+     <section>
+  <nav class="blend">
+    <ul>
+      <li><a href="/HoD/Science/science_hod.html">Home</a></li>
+      <li><a href="/HoD/Science/science_hod_reports.html">Reports</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">About</a></li>
+      <script>
+        function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                console.log('User signed out.');
+                window.location.href = "https://tsh.edu.in";
+            });
+        }
+        function onLoad() {
+            gapi.load('auth2', function() {
+                gapi.auth2.init();
+            });
+        }
+      </script>
+      <li><a href="#" onclick="signOut();">Sign Out</a></li>
+      <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+    </ul>
+  </nav>
+</section>
+<div class="buttons">
+     <button type="button" class="fill" onclick="window.open('https://forms.gle/Ym5c49C7r1LLnGDZ8', '_blank')">Class Observation Report</button>
+     <button type="button" class="fill" onclick="window.location.href='/HoD/Science/case_studies/casestudy_main.html'">Case Study Reports</button>
+</div>
+</body>
+</html>

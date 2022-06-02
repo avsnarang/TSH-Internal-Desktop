@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORM</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="assets/icon.ico">
+</head>
+<body>
+
+	<div class="form">
+		<div class="title-div">
+			<h1>Contact Form</h1>
+			<p>Fill up the form</p>
+			<p class="required">*Required</p>
+		</div>
+		<form action="mail.php" method="post">
+				<div class="name-div">
+					<div class="name">Short Answer Question? <span class="required">*</span></div>
+					<div class="input-div"><input type="input" name="answer" placeholder="Your answer"></div>
+				</div>
+
+				<div class="mcq-div">
+					<div class="name">MCQ <span class="required">*</span></div>
+					<div class="inputs-div">
+						 <input type="radio" name="gender" value="option1"> Option1</input> <br>
+						 <input type="radio" name="gender" value="option2"> Option2 </input> <br>
+						 <input type="radio" name="gender" value="option3"> Option3 </input>
+					</div>
+				</div>
+				
+				<div class="mcq-div">
+					<div class="name">Checkbox <span class="required">*</span></div>
+					<div class="inputs-div">
+						 <input type="checkbox" name="gender1" value="option1"> Option1</input> <br>
+						 <input type="checkbox" name="gender1" value="option2"> Option2 </input> <br>
+						 <input type="checkbox" name="gender1" value="option3"> Option3 </input>
+					</div>
+				</div>
+
+				<div class="dropdown-div">
+					<div class="name">Dropdown Question? </div>
+					<div class="input-div">				
+						<div class="dropdown">
+							<select>
+									<option name="drop" value="Monday"> Monday </option>
+									<option name="drop" value="Monday"> tuesday </option>
+									<option name="drop" value="Monday"> dfc </option>
+							</select>
+						  
+						</div>
+					</div>
+				</div>
+				
+			
+				<input type="file" id="actual-btn" hidden/>
+				<div>
+					<input class="btn" type="submit" name="Submit">
+				</div>
+		</form>
+
+		<div class="last-div">
+		   <h2>Contact Forms</h2>
+		</div>
+		
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
+
+&star;
+&starf;
+&bigstar;

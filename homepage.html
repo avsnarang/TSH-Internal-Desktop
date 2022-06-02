@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="overflow.css">
+     <link rel="stylesheet" type="text/css" href="homepage_styles.css">
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>TSH - Homepage</title>
+</head>
+<body>
+     <a href="homepage.html"> Home </a>
+     <a href="reports.html"> Reports </a>
+     <a href="404page.html"> Work </a>
+     <a href="404page.html"> About  </a>
+     <a href="index.php" onclick="signOut();">Sign out</a>
+     <script>
+          function signOut() {
+          var auth2 = gapi.auth2.getAuthInstance();
+          auth2.signOut().then(function () {
+               console.log('User signed out.');
+          });
+          window.location="index.html";
+          }
+     </script>
+</body>
+</html>

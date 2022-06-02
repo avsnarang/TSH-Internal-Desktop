@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
+a{
+  text-decoration: none;
+  color: black;
+}
+    html,
+body {
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  min-height: 100vh;
+  font-family: "Roboto Mono", monospace;
+}
+
+button {
+  margin: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.fill {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-top: 70px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid rgb(0, 0, 0);
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.fill::after {
+  content: "";
+  background-color: #66f2d5;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.fill:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+
+/*
+Red Button CSS
+*/
+.fill_red {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-top: 70px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid rgb(0, 0, 0);
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+}
+
+.fill_red::after {
+  content: "";
+  background-color: #ff0000;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.fill_red:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+
+.fill_green {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-top: 70px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid rgb(0, 0, 0);
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+}
+
+.fill_green::after {
+  content: "";
+  background-color: #008f07;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.fill_green:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+.fill_teal {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-top: 70px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid rgb(0, 0, 0);
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  color: #000000;
+}
+
+.fill_teal::after {
+  content: "";
+  background-color: #00ffb3;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.fill_teal:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+.fill_orange {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-top: 70px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid rgb(0, 0, 0);
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+}
+
+.fill_orange::after {
+  content: "";
+  background-color: #ff7300;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.fill_orange:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+.fill_blue {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-top: 70px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid rgb(0, 0, 0);
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+}
+
+.fill_blue::after {
+  content: "";
+  background-color: #00aeff;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.fill_blue:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+
+.fill_purple {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-top: 70px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid rgb(0, 0, 0);
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+}
+
+.fill_purple::after {
+  content: "";
+  background-color: rgba(128, 0, 255, 0.85);
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.fill_purple:hover::after {
+  top: 0px;
+  left: 0px;
+}
