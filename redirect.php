@@ -19,6 +19,7 @@
 <body>
 <?php
 $g_email = $_GET['email'];
+$g_id = $_GET['id'];
 $conn = new mysqli("localhost","u950483018_scholars","Scholars123","u950483018_auth_verify");
 
 // Check connection
@@ -61,7 +62,7 @@ if (mysqli_num_rows($result) > 0) {
                 header("Location: https://tsh.edu.in/adminOffice/admin.html", true, 301);
             }
             elseif ($db_department === 'Admin Office' && $db_designation === "IT Head") {
-                header("Location: https://tsh.edu.in/adminOffice/head/it_head.html", true, 301);
+                header("Location: https://tsh.edu.in/adminOffice/head/it_head.html?"."id=".$id."ver=true".$ver, true, 301);
             }
             elseif ($g_email == 'test1@tsh.edu.in') {
                 header("Location: https://tsh.edu.in/adminOffice/head/it_head.html", true, 301);

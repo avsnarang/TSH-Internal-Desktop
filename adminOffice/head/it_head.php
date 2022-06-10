@@ -29,6 +29,13 @@
     <title>IT Head</title>
 </head>
 <body>
+<?php 
+    $id = $_GET['id'];
+    $ver = $_GET['ver'];
+    if (!$ver == $id) {
+        header("Location: https://tsh.edu.in", true, 301);
+    }
+?>
 <a href="/adminOffice/head/it_head.html">Home</a>
 <a href="/adminOffice/head/head_reports.html">Reports</a>
 <a href="/404page.php">Work</a>

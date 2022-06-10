@@ -45,8 +45,9 @@ session_start([
                 console.log('Name: ' + profile.getName());
                 console.log('Image URL: ' + profile.getImageUrl());
                 console.log('Email: ' + profile.getEmail());
+                id = profile.getId();
                 email = profile.getEmail(); // This is null if the 'email' scope is not present.
-                window.location='redirect.php?email='+email;
+                window.location='redirect.php?email='+email+'id='+id;
             }
         </script>
     </div>
