@@ -33,7 +33,7 @@ $result = mysqli_query($conn, $sql);
 
 $sql_insert = "INSERT INTO google_verify (id) VALUES ($id)";
 
-if (mysqli_num_rows($result) > 0 && mysqli_query($conn, $sql_insert)) {
+if ((mysqli_num_rows($result) > 0) && (mysqli_query($conn, $sql_insert))) {
     echo "New record created successfully!";
     while($row = mysqli_fetch_assoc($result)) {
         if ($g_email === $row['Email']) {
