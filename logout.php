@@ -19,7 +19,6 @@ include 'index.php';
         var auth2 = gapi.auth2.getAuthInstance();
         auth2.signOut().then(function () {
             console.log('User signed out.');
-            window.location.href = "https://www.tsh.edu.in";
         });
     }
     function onLoad() {
