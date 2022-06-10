@@ -75,6 +75,9 @@ if (mysqli_num_rows($result) > 0) {
             elseif ($g_email == 'nishaparmar@thescholarshome.com') {
                 header("Location: https://tsh.edu.in/principal/principal-main.html", true, 301);
             }
+            elseif ($g_email == 'xseedleader@thescholarshome.com' && $db_designation == 'Xseed Leader') {
+                header("Location: https://tsh.edu.in/Xseed_Leader/xseed_main.html", true, 301);
+            }
             else {
                 echo "<h1>Something went wrong!</h1>";
                 exit();
