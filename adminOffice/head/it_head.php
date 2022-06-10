@@ -29,22 +29,6 @@
     <title>IT Head</title>
 </head>
 <body>
-<?php 
-$g_id = $_GET['id'];
-$conn = new mysqli("localhost","u950483018_scholars","Scholars123","u950483018_auth_verify");
-
-$sql = "SELECT id FROM google_verify";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    while($row = mysqli_fetch_assoc($result)) {
-        $vid = $row['id'];
-        if (!$vid == $g_id) {
-            header("Location: https://tsh.edu.in/logout.php", true, 301);
-        }
-    }
-}
-?>
 <a href="/adminOffice/head/it_head.html">Home</a>
 <a href="/adminOffice/head/head_reports.html">Reports</a>
 <a href="/404page.php">Work</a>
