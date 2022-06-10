@@ -24,11 +24,7 @@
         });
     }
 </script>
-
 <h1>You have successfully logged out!</h1>
 <button type="button" class="fill" onclick="window.location.href='https://tsh.edu.in'">Continue Home</button>
 </body>
 </html>
-<?php
-session_destroy();
-?>
