@@ -30,11 +30,20 @@
 </head>
 <body>
 <?php 
-    $id = $_GET['id'];
-    $ver = $_GET['ver'];
-    if (!$ver == $id) {
-        header("Location: https://tsh.edu.in/logout.php", true, 301);
+$g_id = $_GET['id'];
+$conn = new mysqli("localhost","u950483018_scholars","Scholars123","u950483018_auth_verify");
+
+$sql = "SELECT id FROM google_verify";
+$result = mysqli_query($conn, $sql);
+
+if (mysqli_num_rows($result) > 0) {
+    while($row = mysqli_fetch_assoc($result)) {
+        $vid = $row['id'];
+        if (!$vid == $id) {
+            header("Location: https://tsh.edu.in", true, 301);
+        }
     }
+}
 ?>
 <a href="/adminOffice/head/it_head.html">Home</a>
 <a href="/adminOffice/head/head_reports.html">Reports</a>
