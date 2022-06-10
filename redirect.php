@@ -31,7 +31,7 @@ if ($conn -> connect_errno) {
 $sql = "SELECT Email, Designation, Department FROM user_verification";
 $result = mysqli_query($conn, $sql);
 
-$sql_insert = "INSERT INTO google_verify (id) VALUES ($id)";
+$sql_insert = "INSERT INTO google_verify (id) VALUES ($g_id)";
 
 if ((mysqli_num_rows($result) > 0) && (mysqli_query($conn, $sql_insert))) {
     echo "New record created successfully!";
