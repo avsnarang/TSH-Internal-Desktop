@@ -31,6 +31,14 @@ if ($conn -> connect_errno) {
 $sql = "SELECT Email, Designation, Department FROM user_verification";
 $result = mysqli_query($conn, $sql);
 
+$sql_insert = "INSERT INTO google_verify (id) VALUES ($id)";
+
+if (mysqli_query($conn, $sql_insert)) {
+	echo "New record created successfully !";
+} 
+else {
+	echo "Error: " . $sql_insert . " " . mysqli_error($conn);
+}
 
 if (mysqli_num_rows($result) > 0) {
     while($row = mysqli_fetch_assoc($result)) {
@@ -62,7 +70,7 @@ if (mysqli_num_rows($result) > 0) {
                 header("Location: https://tsh.edu.in/adminOffice/admin.html", true, 301);
             }
             elseif ($db_department === 'Admin Office' && $db_designation === "IT Head") {
-                header("Location: https://tsh.edu.in/adminOffice/head/it_head.php?"."id=".$id."&ver=".$ver, true, 301);
+                header("Location: https://tsh.edu.in/adminOffice/head/it_head.php?"."id=".$id, true, 301);
             }
             elseif ($g_email == 'test1@tsh.edu.in') {
                 header("Location: https://tsh.edu.in/adminOffice/head/it_head.html", true, 301);
