@@ -14,8 +14,23 @@ include 'index.php';
     <title>Home - Principal</title>
 </head>
 <body>
+<script>
+    function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+            console.log('User signed out.');
+            window.location.href = "https://www.tsh.edu.in";
+        });
+    }
+    function onLoad() {
+        gapi.load('auth2', function() {
+            gapi.auth2.init();
+        });
+    }
+</script>
+
 <h1>You have successfully logged out!</h1>
-<button type="button" class="fill"><a href = "/index.php">Continue Home</a></button>
+<button type="button" class="fill" onclick="window.location.href='https://tsh.edu.in'">Continue Home</button>
 </body>
 </html>
 <?php

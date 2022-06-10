@@ -33,7 +33,7 @@
     $id = $_GET['id'];
     $ver = $_GET['ver'];
     if (!$ver == $id) {
-        header("Location: https://tsh.edu.in", true, 301);
+        header("Location: https://tsh.edu.in/logout.php", true, 301);
     }
 ?>
 <a href="/adminOffice/head/it_head.html">Home</a>
