@@ -39,8 +39,8 @@ $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
     while($row = mysqli_fetch_assoc($result)) {
         $vid = $row['id'];
-        if (!$vid == $id) {
-            header("Location: https://tsh.edu.in", true, 301);
+        if (!$vid == $g_id) {
+            header("Location: https://tsh.edu.in/logout.php", true, 301);
         }
     }
 }
