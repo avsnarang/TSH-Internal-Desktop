@@ -1,8 +1,9 @@
 <?php
-session_start([
-    'cookie_lifetime' => 600,
-    'read_and_close'  => true,
-]);
+session_start();
+
+if(isset($_SESSION['uid'])) {
+    header("Location: profile.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -47,7 +48,7 @@ session_start([
                         if (this.readyState == 4 && this.status == 200) {
                             if('success' == this.responseText) {
                                 // redirect to profile page
-                                location.href = 'redirect.php';
+                                window.location.href = 'profile.php';
                             }
                         }
                     };
@@ -60,25 +61,13 @@ session_start([
                     client_id: "584175274872-hlf4ccq2q15ki7ua6h2sanijnind4lj9.apps.googleusercontent.com",
                     callback: handleCredentialResponse
                 });
+                google.accounts.id.renderButton(
+                    document.getElementById("buttonDiv"),
+                    { theme: "outline", size: "large", width: "200" }  // customization attributes
+                );
                 }
             </script>
-            <div id="g_id_onload"
-                data-client_id="584175274872-hlf4ccq2q15ki7ua6h2sanijnind4lj9.apps.googleusercontent.com"
-                data-context="signin"
-                data-ux_mode="popup"
-                data-callback="handleCredentialResponse"
-                data-nonce=""
-                data-auto_prompt="false">
-            </div>
-
-            <div class="g_id_signin"
-                data-type="standard"
-                data-shape="rectangular"
-                data-theme="outline"
-                data-text="signin_with"
-                data-size="large"
-                data-logo_alignment="left">
-            </div>
+            <div id="buttonDiv"></div>
         </center>
     </div>
 </div>
