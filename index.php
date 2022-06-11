@@ -38,14 +38,22 @@ session_start([
         <header>Login With</header>
         <center>
             <script src="https://accounts.google.com/gsi/client" async defer></script>
+            <script type=''>
+            </script>
             <script>
                 function handleCredentialResponse(response) {
-                    console.log("Encoded JWT ID token: " + response.credential);
-                    console.log("ID: " + response.sub);
-                    console.log('Full Name: ' + response.name);
-                    console.log("Email: " + response.email);
-                    email = response.email;
-                    window.location.href = "https://tsh.edu.in/redirect.php?email=" + email;
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            if('success' == this.responseText) {
+                                // redirect to profile page
+                                location.href = 'redirect.php';
+                            }
+                        }
+                    };
+                    xhttp.open("POST", "save-user.php", true);
+                    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                    xhttp.send("response="+response.credential);
                 }
                 window.onload = function () {
                 google.accounts.id.initialize({
