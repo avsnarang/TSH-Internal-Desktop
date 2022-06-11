@@ -48,7 +48,7 @@ if(isset($_SESSION['uid'])) {
                         if (this.readyState == 4 && this.status == 200) {
                             if('success' == this.responseText) {
                                 // redirect to profile page
-                                window.location.href = 'profile.php';
+                                window.location.href = 'https://tsh.school/profile.php';
                             }
                         }
                     };
