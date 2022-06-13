@@ -31,8 +31,6 @@
 <body>
 <a href="/adminOffice/head/it_head.html">Home</a>
 <a href="/adminOffice/head/head_reports.html">Reports</a>
-<a href="/404page.php">Work</a>
-<a href="/404page.php">About</a>
 <script>
     function signOut() {
         var auth2 = gapi.auth2.getAuthInstance();

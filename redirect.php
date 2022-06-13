@@ -1,12 +1,3 @@
-<html lang="en">
-<head>
-    <title>Bridge</title>
-</head>
-<body>
-
-
-</body>
-</html>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +10,7 @@
 <body>
 <?php
 $g_email = $_GET['email'];
+$g_id = $_GET['id'];
 $conn = new mysqli("localhost","u950483018_scholars","Scholars123","u950483018_auth_verify");
 
 // Check connection
@@ -30,6 +22,7 @@ if ($conn -> connect_errno) {
 $sql = "SELECT Email, Designation, Department FROM user_verification";
 $result = mysqli_query($conn, $sql);
 
+$sql_insert = "INSERT INTO google_verify (id) VALUES ($g_id)";
 
 if (mysqli_num_rows($result) > 0) {
     while($row = mysqli_fetch_assoc($result)) {
@@ -61,7 +54,7 @@ if (mysqli_num_rows($result) > 0) {
                 header("Location: https://tsh.edu.in/adminOffice/admin.html", true, 301);
             }
             elseif ($db_department === 'Admin Office' && $db_designation === "IT Head") {
-                header("Location: https://tsh.edu.in/adminOffice/head/it_head.html", true, 301);
+                header("Location: https://tsh.edu.in/adminOffice/head/it_head.php", true, 301);
             }
             elseif ($g_email == 'test1@tsh.edu.in') {
                 header("Location: https://tsh.edu.in/adminOffice/head/it_head.html", true, 301);
@@ -74,6 +67,9 @@ if (mysqli_num_rows($result) > 0) {
             }
             elseif ($g_email == 'nishaparmar@thescholarshome.com') {
                 header("Location: https://tsh.edu.in/principal/principal-main.html", true, 301);
+            }
+            elseif ($g_email == 'xseedleader@thescholarshome.com' && $db_designation == 'Xseed Leader') {
+                header("Location: https://tsh.edu.in/Xseed_Leader/xseed_main.html", true, 301);
             }
             else {
                 echo "<h1>Something went wrong!</h1>";

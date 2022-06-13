@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <meta name="google-signin-client_id" content="584175274872-hlf4ccq2q15ki7ua6h2sanijnind4lj9.apps.googleusercontent.com">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -412,18 +413,24 @@
   <div class="star star5"></div>
 
   <div class="error">
-  <div class="error__title">404</div>
-  <div class="error__subtitle">Hmmm...</div>
-  <div class="error__description">It looks like one of the  developers fell asleep</div>
-    <button class="error__button error__button--active"><a href="logout.php" onclick="signOut()">Home</a></button>
+    <div class="error__title">404</div>
+    <div class="error__subtitle">Hmmm...</div>
+    <div class="error__description">It looks like one of the  developers fell asleep</div>
       <script>
-          function signOut() {
-              var auth2 = gapi.auth2.getAuthInstance();
-              auth2.signOut().then(function () {
-                  console.log('User signed out.');
-              });
+        function signOut() {
+          var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+              console.log('User signed out.');
+            });
           }
+        function onLoad() {
+          gapi.load('auth2', function() {
+            gapi.auth2.init();
+          });
+        } 
       </script>
+      <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+      <button class="error__button error__button--active"><a href="index.php" onclick="signOut()">Home</a></button>
   </div>
 
   <div class="astronaut">
