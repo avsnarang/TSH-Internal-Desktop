@@ -124,6 +124,8 @@ nav ul li a:hover {
 	text-align: center;
 	display: -ms-flexbox;
 	justify-content: center;
+	border: 5px;
+	border-color: black;
 }
 
 .navbar_toggle {
