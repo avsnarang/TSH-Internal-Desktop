@@ -281,7 +281,7 @@ Red Button CSS
   cursor: pointer;
   position: relative;
   background-color: rgba(255, 255, 255, 0);
-  color: #000000;
+  color: #ffffff;
 }
 
 .fill_pink::after {
