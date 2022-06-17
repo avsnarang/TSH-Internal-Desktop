@@ -48,7 +48,7 @@ if (mysqli_num_rows($result) > 0) {
                 header("Location: https://tsh.edu.in/HoD/SSc/ssc_hod.html", true, 301);
             }
             elseif ($db_department === 'Information Technology' && $db_designation === "HoD") {
-                header("Location: https://tsh.edu.in/it_hod.html", true, 301);
+                header("Location: https://tsh.edu.in/HoD/IT/it_hod.html", true, 301);
             }
             elseif ($db_department === 'Admin Office' && $db_designation === "IT Handler") {
                 header("Location: https://tsh.edu.in/adminOffice/admin.html", true, 301);
