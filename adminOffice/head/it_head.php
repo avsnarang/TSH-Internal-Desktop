@@ -3,6 +3,7 @@
 <head>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <meta name="google-signin-client_id" content="584175274872-hlf4ccq2q15ki7ua6h2sanijnind4lj9.apps.googleusercontent.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -28,27 +29,40 @@
     <title>IT Head</title>
 </head>
 <body>
-<div class="topnav">
-    <a href="/adminOffice/head/it_head.php">Home</a>
-    <a href="/adminOffice/head/head_reports.html">Reports</a>
-    <a href="#">Work</a>
-    <a href="#">About</a>
-    <script>
-        function signOut() {
-            var auth2 = gapi.auth2.getAuthInstance();
-            auth2.signOut().then(function () {
-                console.log('User signed out.');
-                window.location.href = "https://www.tsh.edu.in";
-            });
-        }
-        function onLoad() {
-            gapi.load('auth2', function() {
-                gapi.auth2.init();
-            });
-        }
-    </script>
-    <a href="#" onclick="signOut();" class="split">Sign out</a>
+<div class="topnav" id="myTopnav">
+  <a href="/adminOffice/head/it_head.php">Home</a>
+  <a href="/adminOffice/head/head_reports.html">Reports</a>
+  <a href="#">Work</a>
+  <a href="#">About</a>
+  <script>
+      function signOut() {
+          var auth2 = gapi.auth2.getAuthInstance();
+          auth2.signOut().then(function () {
+              console.log('User signed out.');
+              window.location.href = "https://www.tsh.edu.in";
+          });
+      }
+      function onLoad() {
+          gapi.load('auth2', function() {
+              gapi.auth2.init();
+          });
+      }
+  </script>
+  <a href="#" onclick="signOut();" class="split">Sign out</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
+<script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+    }
+</script>
 <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
 </body>
 </html>
