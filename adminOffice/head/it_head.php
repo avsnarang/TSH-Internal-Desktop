@@ -29,40 +29,25 @@
     <title>IT Head</title>
 </head>
 <body>
-<div class="topnav" id="myTopnav">
-  <a href="/adminOffice/head/it_head.php">Home</a>
-  <a href="/adminOffice/head/head_reports.html">Reports</a>
-  <a href="#">Work</a>
-  <a href="#">About</a>
-  <script>
-      function signOut() {
-          var auth2 = gapi.auth2.getAuthInstance();
-          auth2.signOut().then(function () {
-              console.log('User signed out.');
-              window.location.href = "https://www.tsh.edu.in";
-          });
-      }
-      function onLoad() {
-          gapi.load('auth2', function() {
-              gapi.auth2.init();
-          });
-      }
-  </script>
-  <a href="#" onclick="signOut();" class="split">Sign out</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-<script>
-    function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-    }
-</script>
+<a href="/HoD/English/english_hod.html"> Home </a>
+    <a href="/HoD/English/english_hod_reports.html"> Reports </a>
+    <a href="404page.html"> Work </a>
+    <a href="404page.html"> About  </a>
+    <script>
+        function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                console.log('User signed out.');
+                window.location.href = "https://tsh.edu.in";
+            });
+        }
+        function onLoad() {
+            gapi.load('auth2', function() {
+                gapi.auth2.init();
+            });
+        }
+    </script>
+    <a href="#" onclick="signOut();">Sign out</a>
 <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
 </body>
 </html>
