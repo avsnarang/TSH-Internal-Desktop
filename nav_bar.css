@@ -213,13 +213,13 @@ nav ul li a:hover {
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
+  background-color: rgba(106, 106, 106, 0.75);
   color: white;
 }
 
 /* Add a grey background to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: rgb(195, 195, 195);
   color: black;
 }
 
