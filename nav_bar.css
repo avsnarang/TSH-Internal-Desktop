@@ -164,12 +164,12 @@ nav ul li a:hover {
 /* Create a right-aligned (split) link inside the navigation bar */
 .topnav a.split {
   float: right;
-  background-color: #04AA6D;
+  background-color: #ffb300;
   color: white;
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #007fdf;
   color: white;
 }
 
