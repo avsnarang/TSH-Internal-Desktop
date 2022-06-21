@@ -115,14 +115,9 @@ nav ul li a:hover {
 }
 
 .buttons {
-	position: relative;
-	top: 200px;
-	width: 100%;
-	transform: translate(0, -50%);
-	margin: 100px 0;
+	margin: 50px 0;
 	align-items: center;
 	text-align: center;
-	display: -ms-flexbox;
 	justify-content: center;
 }
 
@@ -169,6 +164,11 @@ nav ul li a:hover {
 /* Create a right-aligned (split) link inside the navigation bar */
 .topnav a.split {
   float: right;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav a.active {
   background-color: #04AA6D;
   color: white;
 }
