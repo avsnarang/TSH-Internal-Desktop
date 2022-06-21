@@ -30,7 +30,7 @@
     <title>IT Head</title>
 </head>
 <body>
-    <a href="/adminOffice/head/it_head.php" class="active"> Home </a>
+    <a href="/adminOffice/head/it_head.php"> Home </a>
     <a href="/adminOffice/head/head_reports.html"> Reports </a>
     <a href="404page.html"> Work </a>
     <a href="404page.html"> About  </a>
