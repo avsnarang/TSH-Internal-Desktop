@@ -90,7 +90,7 @@
      <p>
           This website is created for the purpose of receiving all kinds of Reports from HoD(s)/Coordinators, School Counsellor, Xseed Leader 
           and Teachers. This website can also be used to provide information to the Parents and Students in the future. <br></br>
-          These reports help the Management to study and understand of all the different things happening in and around the school, like:
+          These reports help the Management to study and understand all the different things happening in and around the school, like:
      </p>
      <ul>
           <li>Counselling of the Students</li>
