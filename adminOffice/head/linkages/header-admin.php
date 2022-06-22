@@ -12,4 +12,3 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet" />
 <link rel="icon" type="image/x-icon" href="/img/favicon.png">
-<title>IT Head Reports</title>
