@@ -19,7 +19,7 @@
 </head>
 <body>
 <?php
-    include '/adminOffice/head/linkages/top-nav-adminHead.php';
+    include 'https://tsh.edu.in/adminOffice/head/linkages/top-nav-adminHead.php';
 ?>
 <div class="buttons">
 	<button type="button" class="fill_red" onclick="window.location.href='dep_class-observation-reports.php'">Class Observation Reports - Departments</button>
