@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="92f54e5b-7d52-40b4-9d52-0d42e9282dbe" name="Changes" comment="changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+    <list default="true" id="92f54e5b-7d52-40b4-9d52-0d42e9282dbe" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/TSH-Internal-Desktop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+>>>>>>> parent of fd18c1d1 (changes)
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +83,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655872015549</updated>
+<<<<<<< HEAD
       <workItem from="1655872017800" duration="1206000" />
+=======
+      <workItem from="1655872017800" duration="823000" />
+>>>>>>> parent of fd18c1d1 (changes)
     </task>
     <task id="LOCAL-00001" summary="changes">
       <created>1655873378014</created>

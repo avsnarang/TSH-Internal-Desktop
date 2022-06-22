@@ -36,45 +36,20 @@ session_start([
 <div class="bg-img">
     <div class="content">
         <header>Login With</header>
-        <center>
-            <script src="https://accounts.google.com/gsi/client" async defer></script>
-            <script>
-                function onSignIn(googleUser) {
-                    var profile = googleUser.getBasicProfile();
-                    var email;
-                    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-                    console.log('Name: ' + profile.getName());
-                    console.log('Image URL: ' + profile.getImageUrl());
-                    console.log('Email: ' + profile.getEmail());
-                    id = profile.getId();
-                    email = profile.getEmail(); // This is null if the 'email' scope is not present.
-                    window.location='redirect.php?email='+email+'&id='+id;
-                }
-                window.onload = function () {
-                    google.accounts.id.initialize({
-                        client_id: "584175274872-hlf4ccq2q15ki7ua6h2sanijnind4lj9.apps.googleusercontent.com",
-                        callback: onSignIn
-                    });
-                }
-            </script>
-            <div id="g_id_onload"
-                 data-client_id="584175274872-hlf4ccq2q15ki7ua6h2sanijnind4lj9.apps.googleusercontent.com"
-                 data-context="signin"
-                 data-ux_mode="popup"
-                 data-callback="onSignIn"
-                 data-nonce=""
-                 data-auto_prompt="false">
-            </div>
-
-            <div class="g_id_signin"
-                 data-type="standard"
-                 data-shape="rectangular"
-                 data-theme="outline"
-                 data-text="signin_with"
-                 data-size="large"
-                 data-logo_alignment="left">
-            </div>
-        </center>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <script>
+            function onSignIn(googleUser) {
+                var profile = googleUser.getBasicProfile();
+                var email;
+                console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+                console.log('Name: ' + profile.getName());
+                console.log('Image URL: ' + profile.getImageUrl());
+                console.log('Email: ' + profile.getEmail());
+                id = profile.getId();
+                email = profile.getEmail(); // This is null if the 'email' scope is not present.
+                window.location='redirect.php?email='+email+'&id='+id;
+            }
+        </script>
     </div>
 </div>
 </body>
