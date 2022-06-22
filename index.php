@@ -39,35 +39,49 @@ if(isset($_SESSION['uid'])) {
         <header>Login With</header>
         <center>
             <script src="https://accounts.google.com/gsi/client" async defer></script>
-            <script type=''>
-            </script>
             <script>
-                function handleCredentialResponse(response) {
-                    var xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function() {
-                        if (this.readyState == 4 && this.status == 200) {
-                            if('success' == this.responseText) {
-                                // redirect to profile page
-                                window.location.href = 'https://tsh.school/profile.php';
-                            }
-                        }
-                    };
-                    xhttp.open("POST", "save-user.php", true);
-                    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                    xhttp.send("response="+response.credential);
+                function decodeJwtResponse() {
+                    function json_decode(base64Decode, b) {
+                        return undefined;
+                    }
+
+                    var decode = json_decode(base64_decode(response), true);
+                }
+                function onSignIn(googleUser) {
+                    var profile = googleUser.getBasicProfile();
+                    var email;
+                    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+                    console.log('Name: ' + profile.getName());
+                    console.log('Image URL: ' + profile.getImageUrl());
+                    console.log('Email: ' + profile.getEmail());
+                    id = profile.getId();
+                    email = profile.getEmail(); // This is null if the 'email' scope is not present.
+                    window.location='redirect.php?email='+email+'&id='+id;
                 }
                 window.onload = function () {
-                google.accounts.id.initialize({
-                    client_id: "584175274872-hlf4ccq2q15ki7ua6h2sanijnind4lj9.apps.googleusercontent.com",
-                    callback: handleCredentialResponse
-                });
-                google.accounts.id.renderButton(
-                    document.getElementById("buttonDiv"),
-                    { theme: "outline", size: "large", width: "200" }  // customization attributes
-                );
+                    google.accounts.id.initialize({
+                        client_id: "584175274872-hlf4ccq2q15ki7ua6h2sanijnind4lj9.apps.googleusercontent.com",
+                        callback: handleCredentialResponse
+                    });
                 }
             </script>
-            <div id="buttonDiv"></div>
+            <div id="g_id_onload"
+                 data-client_id="584175274872-hlf4ccq2q15ki7ua6h2sanijnind4lj9.apps.googleusercontent.com"
+                 data-context="signin"
+                 data-ux_mode="popup"
+                 data-callback="onSignIn"
+                 data-nonce=""
+                 data-auto_prompt="false">
+            </div>
+
+            <div class="g_id_signin"
+                 data-type="standard"
+                 data-shape="rectangular"
+                 data-theme="outline"
+                 data-text="signin_with"
+                 data-size="large"
+                 data-logo_alignment="left">
+            </div>
         </center>
     </div>
 </div>
