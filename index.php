@@ -39,13 +39,6 @@ session_start([
         <center>
             <script src="https://accounts.google.com/gsi/client" async defer></script>
             <script>
-                function decodeJwtResponse() {
-                    function json_decode(base64Decode, b) {
-                        return undefined;
-                    }
-
-                    var decode = json_decode(base64_decode(response), true);
-                }
                 function onSignIn(googleUser) {
                     var profile = googleUser.getBasicProfile();
                     var email;
@@ -60,7 +53,7 @@ session_start([
                 window.onload = function () {
                     google.accounts.id.initialize({
                         client_id: "584175274872-hlf4ccq2q15ki7ua6h2sanijnind4lj9.apps.googleusercontent.com",
-                        callback: handleCredentialResponse
+                        callback: onSignIn
                     });
                 }
             </script>
