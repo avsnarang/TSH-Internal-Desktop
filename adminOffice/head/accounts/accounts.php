@@ -32,7 +32,7 @@
   <nav class="blend">
     <ul>
       <li><a href="/adminOffice/head/it_head.html">Home</a></li>
-      <li><a href="/adminOffice/head/head_reports.html">Reports</a></li>
+      <li><a href="/adminOffice/head/head_reports.php">Reports</a></li>
       <script>
         function signOut() {
             var auth2 = gapi.auth2.getAuthInstance();
