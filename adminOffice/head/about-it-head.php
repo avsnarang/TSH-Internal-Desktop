@@ -2,39 +2,39 @@
 <html lang="en">
 <head>
     <?php
-    include_once '../head/linkages/header-admin.php';
+        include_once '../head/linkages/header-admin.php';
     ?>
-     <link rel="preconnect" href="https://fonts.googleapis.com"> 
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-     <link href="https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap" rel="stylesheet">
-     <link rel="preconnect" href="https://fonts.googleapis.com"> 
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
-     <title>About - IT Head</title>
-     <style>
-          h1{
-               font-size: 60px;
-               font-weight: bold;
-               font-family: 'Nuosu SIL', serif;
-          }
-          .text-box {
-               font-family: 'Nunito Sans', sans-serif;
-               font-weight: 300;
-               margin: 20px 100px;
-          }
-          .text-box p{
-               text-align: justify;
-               font-size: 26px;
-          }
-          .text-box ul{
-               text-align: justify;
-               font-size: 22px;
-          }
-          .text-box li{
-               text-align: justify;
-               font-size: 22px;
-          }
-     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <title>About - IT Head</title>
+    <style>
+        h1{
+           font-size: 60px;
+           font-weight: bold;
+           font-family: 'Nuosu SIL', serif;
+        }
+        .text-box {
+           font-family: 'Nunito Sans', sans-serif;
+           font-weight: 300;
+           margin: 20px 100px;
+        }
+        .text-box p{
+           text-align: justify;
+           font-size: 26px;
+        }
+        .text-box ul{
+           text-align: justify;
+           font-size: 22px;
+        }
+        .text-box li{
+           text-align: justify;
+           font-size: 22px;
+        }
+    </style>
 </head>
 <body>
 <?php
