@@ -38,7 +38,7 @@
         <div class="dropdown-content">
             <a href="/adminOffice/head/dep_class-observation-reports.php">Class Observation Reports</a>
             <a href="https://docs.google.com/forms/d/1X2sMBF56EmF4SXx8A8H6qzLDUslqn_hAOAIjHZNXJLE/edit?usp=sharing" target="_blank">Admin Work Done</a>
-            <a href="/adminOffice/head/counselling_reports/counselling_reports.html">Counselling Reports</a>
+            <a href="/adminOffice/head/counselling_reports/counselling_reports.php">Counselling Reports</a>
             <a href="/adminOffice/head/case_studies/casestudy_main.html">Case Study Reports</a>
             <a href="https://docs.google.com/forms/d/16vg3OnK3cUcjrYANqHTyelZZBI6Ov3FsnFdeRks63N8/edit?usp=sharing" target="_blank">Self-Analysis HoD's</a>
         </div>
