@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <?php
-  include_once '../head/linkages/header-admin.php';
+  include_once '../../head/linkages/header-admin.php';
   ?>
   <title>Department - Class Observations</title>
 </head>

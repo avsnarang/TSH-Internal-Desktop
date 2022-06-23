@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <?php
-        include_once '../head/linkages/header-admin.php';
+        include_once '../../head/linkages/header-admin.php';
     ?>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

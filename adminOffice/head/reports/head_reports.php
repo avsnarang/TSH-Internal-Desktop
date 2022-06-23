@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <?php 
-        include '../head/linkages/header-admin.php';
+        include '../../head/linkages/header-admin.php';
     ?>
     <title>IT Head Reports</title>
 </head>
