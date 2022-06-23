@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <?php 
-    include '../head/linkages/header-admin.php';
+        include '../head/linkages/header-admin.php';
     ?>
     <title>IT Head Reports</title>
 </head>
 <body>
 <?php
-include_once '../head/linkages/top-nav-adminHead.php';
+    include_once '../head/linkages/top-nav-adminHead.php';
 ?>
 <div class="buttons">
 	<button type="button" class="fill_red" onclick="window.location.href='../head/dep_class-observation-reports.php'">Class Observation Reports - Departments</button>
