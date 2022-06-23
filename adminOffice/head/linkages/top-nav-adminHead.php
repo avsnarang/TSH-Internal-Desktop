@@ -2,7 +2,7 @@
 <div class="topnav" id="myTopnav">
     <a href="/adminOffice/head/it_head.php">Home</a>
     <div class="dropdown">
-        <button onclick="window.location.href='../head/head_reports.php'" class="dropbtn">Reports
+        <button onclick="window.location.href='../../head/head_reports.php'" class="dropbtn">Reports
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
