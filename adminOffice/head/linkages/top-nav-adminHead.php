@@ -6,7 +6,7 @@
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-            <a href="/adminOffice/head/dep_class-observation-reports.php">Class Observation Reports</a>
+            <a href="/adminOffice/head/reports/dep_class-observation-reports.php">Class Observation Reports</a>
             <a href="https://docs.google.com/forms/d/1X2sMBF56EmF4SXx8A8H6qzLDUslqn_hAOAIjHZNXJLE/edit?usp=sharing" target="_blank">Admin Work Done</a>
             <a href="/adminOffice/head/counselling_reports/counselling_reports.php">Counselling Reports</a>
             <a href="/adminOffice/head/case_studies/casestudy_main.html">Case Study Reports</a>
@@ -14,7 +14,7 @@
         </div>
     </div>
     <a href="#">Work</a>
-    <a href="/adminOffice/head/about-it-head.php">About</a>
+    <a href="/adminOffice/head/reports/about-it-head.php">About</a>
     <script>
         function signOut() {
             var auth2 = gapi.auth2.getAuthInstance();
