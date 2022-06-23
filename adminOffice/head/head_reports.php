@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <?php 
-    include '/Users/avsnarang/Coding/htmlProjects/TSH-Internal-Desktop/adminOffice/head/linkages/header-admin.php';
-    include '/public_html/adminOffice/head/linkages/header-admin.php'
+    include 'header-admin.php';
     ?>
     <title>IT Head Reports</title>
 </head>
