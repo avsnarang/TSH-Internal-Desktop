@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php
-    include_once '../head/linkages/top-nav-adminHead.php';
+    include_once '../../head/linkages/top-nav-adminHead.php';
 ?>
 <div class="buttons">
 	<button type="button" class="fill_red" onclick="window.location.href='dep_class-observation-reports.php'">Class Observation Reports - Departments</button>

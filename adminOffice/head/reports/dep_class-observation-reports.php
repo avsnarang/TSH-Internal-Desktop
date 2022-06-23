@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php
-include_once '../head/linkages/top-nav-adminHead.php';
+include_once '../../head/linkages/top-nav-adminHead.php';
 ?>
 <div class="buttons">
   <button type="button" class="fill" onclick="window.location.href='../Observations_Forms/observe_forms.php'">Forms</button>

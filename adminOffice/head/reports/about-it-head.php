@@ -38,7 +38,7 @@
 </head>
 <body>
 <?php
-include_once '../head/linkages/top-nav-adminHead.php';
+include_once '../../head/linkages/top-nav-adminHead.php';
 ?>
 <h1>About TSH Internal</h1>
 <div class="text-box">
