@@ -7,6 +7,7 @@
         </button>
         <div class="dropdown-content">
             <a href="/adminOffice/head/reports/dep_class-observation-reports.php">Class Observation Reports</a>
+            <a href="/adminOffice/head/Xseed_Observations/xseed_Observe.php">Xseed Observations</a>
             <a href="https://docs.google.com/forms/d/1X2sMBF56EmF4SXx8A8H6qzLDUslqn_hAOAIjHZNXJLE/edit?usp=sharing" target="_blank">Admin Work Done</a>
             <a href="/adminOffice/head/counselling_reports/counselling_reports.php">Counselling Reports</a>
             <a href="/adminOffice/head/case_studies/casestudy_main.html">Case Study Reports</a>
