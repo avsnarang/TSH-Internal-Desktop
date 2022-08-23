@@ -14,7 +14,7 @@
             <a href="https://docs.google.com/forms/d/16vg3OnK3cUcjrYANqHTyelZZBI6Ov3FsnFdeRks63N8/edit?usp=sharing" target="_blank">Self-Analysis HoD's</a>
         </div>
     </div>
-    <a href="#">Work</a>
+    <a href="/adminOffice/head/work/work.php">Work</a>
     <a href="/adminOffice/head/reports/about-it-head.php">About</a>
     <script>
         function signOut() {

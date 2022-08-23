@@ -32,7 +32,7 @@
 <body>
     <a href="/adminOffice/head/it_head.php"> Home </a>
     <a href="/adminOffice/head/reports/head_reports.php"> Reports </a>
-    <a href="404page.html"> Work </a>
+    <a href="/adminOffice/head/work/work.php"> Work </a>
     <a href="/adminOffice/head/about-it-head.php"> About  </a>
     <script>
         function signOut() {
