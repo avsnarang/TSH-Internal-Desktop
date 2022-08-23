@@ -192,7 +192,7 @@ Red Button CSS
 
 .fill_blue::after {
   content: "";
-  background-color: #00aeff;
+  background-color: #00a6ff;
   width: 100%;
   z-index: -1;
   position: absolute;
