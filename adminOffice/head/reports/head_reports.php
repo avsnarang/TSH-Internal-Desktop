@@ -18,7 +18,6 @@
 	<button type="button" class="fill_orange" onclick="window.location.href='../case_studies/casestudy_main.php'">Case Study Reports</button>
 	<button type="button" class="fill_purple" onclick="window.open('https://docs.google.com/forms/d/16vg3OnK3cUcjrYANqHTyelZZBI6Ov3FsnFdeRks63N8/edit?usp=sharing','_blank')">Self-Analysis HoD(s)</button>
     <button type="button" class="fill_pink" onclick="window.location.href='../feedback/parental.html'">Parental Feedback</button>
-    <button type="button" class="fill_blue" onclick="window.open('https://drive.google.com/drive/folders/1ls7Q0r3kXhijh-dEJaFOoLyd2hZAsNkx?usp=sharing','_blank')">Files</button>
 </div>
 </body>
 </html>
