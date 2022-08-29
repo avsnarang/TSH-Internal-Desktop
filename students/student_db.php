@@ -107,9 +107,8 @@ if(isset($_POST['save']))
         <table class="styled-table">
             <thead>
             <tr>
-                <th> Serial Number </th>
-                <th> Name of the Student </th>
                 <th> Admission Number </th>
+                <th> Name of the Student </th>
                 <th> Fathers' Name </th>
                 <th> Mothers' Name </th>
             </tr>
@@ -125,9 +124,8 @@ if(isset($_POST['save']))
                 {
                     ?>
                     <tr>
-                        <td><?php echo $value['Serial Number'];?></td>
-                        <td><?php echo $value['Name'];?></td>
                         <td><?php echo $value['Admission Number'];?></td>
+                        <td><?php echo $value['Name'];?></td>
                         <td><?php echo $value['Fathers\' Name'];?></td>
                         <td><?php echo $value['Mothers\' Name'];?></td>
                     </tr>
