@@ -39,12 +39,10 @@ if(isset($_POST['save']))
 
 <body>
 <div class="container">
-    <h3><u>PHP MySQL search database and display results</u></h3>
-    <br/><br/>
     <form class="form-horizontal" action="#" method="post">
         <div class="row">
             <div class="form-group">
-                <label class="control-label col-sm-4" for="email"><b>Search Employee Information:</b>:</label>
+                <label class="control-label col-sm-4" for="email"><b>Search Student Information:</b>:</label>
                 <div class="col-sm-4">
                     <input type="text" class="form-control" name="search" placeholder="search here" style="text-transform:capitalize">
                 </div>
@@ -64,11 +62,11 @@ if(isset($_POST['save']))
         <table class="table">
             <thead>
             <tr>
-                <th>#</th>
-                <th>Employee Name</th>
-                <th>Phone No</th>
-                <th>Age</th>
-                <th>Department</th>
+                <th> Serial Number </th>
+                <th> Name of the Student </th>
+                <th> Admission Number </th>
+                <th> Fathers' Name </th>
+                <th> Mothers' Name </th>
             </tr>
             </thead>
             <tbody>
