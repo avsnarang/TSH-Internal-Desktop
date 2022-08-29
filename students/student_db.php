@@ -54,6 +54,7 @@ if(isset($_POST['save']))
 </head>
 
 <body>
+<center>
 <div class="container">
     <form class="form-horizontal" action="#" method="post">
         <div class="row">
@@ -115,5 +116,6 @@ if(isset($_POST['save']))
 </div>
 <script src="jquery-3.2.1.min.js"></script>
 <script src="bootstrap.min.js"></script>
+</center>
 </body>
 </html>
