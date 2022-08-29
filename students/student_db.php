@@ -77,7 +77,10 @@ if(isset($_POST['save']))
         }
 
         .styled-table tbody tr:last-of-type {
-            border-bottom: 2px solid #009879;
+            border-right: 2px solid #00a6ff;
+            border-left: 2px solid #00a6ff;
+            border-top: 2px solid #00a6ff;
+            border-bottom: 2px solid #00a6ff;
         }
     </style>
 </head>
