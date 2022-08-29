@@ -69,6 +69,7 @@ if(isset($_POST['save']))
         }
         .styled-table tbody tr {
             border-bottom: 1px solid #dddddd;
+            text-align: center;
         }
 
         .styled-table tbody tr:nth-of-type(even) {
