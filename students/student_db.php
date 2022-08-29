@@ -66,6 +66,7 @@ if(isset($_POST['save']))
         .styled-table th,
         .styled-table td {
             padding: 12px 15px;
+            border: 2px solid #00a6ff;
         }
         .styled-table tbody tr {
             border-bottom: 1px solid #dddddd;
@@ -77,9 +78,6 @@ if(isset($_POST['save']))
         }
 
         .styled-table tbody tr:last-of-type {
-            border-right: 2px solid #00a6ff;
-            border-left: 2px solid #00a6ff;
-            border-top: 2px solid #00a6ff;
             border-bottom: 2px solid #00a6ff;
         }
     </style>
