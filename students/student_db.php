@@ -80,6 +80,22 @@ if(isset($_POST['save']))
         .styled-table tbody tr:last-of-type {
             border-bottom: 2px solid #00a6ff;
         }
+        .search {
+            width: 100%;
+            position: relative;
+            display: flex;
+        }
+        .searchButton {
+            width: 40px;
+            height: 36px;
+            border: 1px solid #00B4CC;
+            background: #00B4CC;
+            text-align: center;
+            color: #fff;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            font-size: 20px;
+        }
     </style>
 </head>
 
@@ -90,6 +106,14 @@ if(isset($_POST['save']))
         <div class="row">
             <div class="form-group">
                 <label class="control-label col-sm-4" for="email"><b>Search Student Information:</b>:</label>
+                <div class="wrap">
+                    <div class="search">
+                        <input type="text" class="form-control" placeholder="Search here" style="text-transform:capitalize">
+                        <button type="submit" name="save" class="searchButton">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
                 <div class="col-sm-4">
                     <input type="text" class="form-control" name="search" placeholder="search here" style="text-transform:capitalize">
                 </div>
