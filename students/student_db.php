@@ -79,10 +79,6 @@ if(isset($_POST['save']))
         .styled-table tbody tr:last-of-type {
             border-bottom: 2px solid #009879;
         }
-        .styled-table tbody tr.active-row {
-            font-weight: bold;
-            color: #009879;
-        }
     </style>
 </head>
 
@@ -106,8 +102,7 @@ if(isset($_POST['save']))
 
         </div>
     </form>
-    <br/><br/>
-    <h3><u>Search Result</u></h3><br/>
+    <br/>
     <div class="table-responsive">
         <table class="styled-table">
             <thead>
