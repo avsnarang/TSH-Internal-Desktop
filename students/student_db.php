@@ -80,7 +80,6 @@ if(isset($_POST['save']))
                 {
                     ?>
                     <tr>
-                        <td><?php echo $key+1;?></td>
                         <td><?php echo $value['Serial Number'];?></td>
                         <td><?php echo $value['Name'];?></td>
                         <td><?php echo $value['Admission Number'];?></td>
