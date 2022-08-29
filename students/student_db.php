@@ -46,7 +46,7 @@ if(isset($_POST['save']))
             <div class="form-group">
                 <label class="control-label col-sm-4" for="email"><b>Search Employee Information:</b>:</label>
                 <div class="col-sm-4">
-                    <input type="text" class="form-control" name="search" placeholder="search here">
+                    <input type="text" class="form-control" name="search" placeholder="search here" style="text-transform:capitalize">
                 </div>
                 <div class="col-sm-2">
                     <button type="submit" name="save" class="btn btn-success btn-sm">Submit</button>
