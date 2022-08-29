@@ -73,20 +73,21 @@ if(isset($_POST['save']))
             </thead>
             <tbody>
             <?php
-            if(!$employee_details)
+            if(!$student_details)
             {
                 echo '<tr>No data found</tr>';
             }
             else{
-                foreach($employee_details as $key=>$value)
+                foreach($student_details as $key=>$value)
                 {
                     ?>
                     <tr>
                         <td><?php echo $key+1;?></td>
-                        <td><?php echo $value['name'];?></td>
-                        <td><?php echo $value['phone_no'];?></td>
-                        <td><?php echo $value['age'];?></td>
-                        <td><?php echo $value['department'];?></td>
+                        <td><?php echo $value['Serial Number'];?></td>
+                        <td><?php echo $value['Name'];?></td>
+                        <td><?php echo $value['Admission Number'];?></td>
+                        <td><?php echo $value['Fathers\' Name'];?></td>
+                        <td><?php echo $value['Mothers\' Name'];?></td>
                     </tr>
 
                     <?php
