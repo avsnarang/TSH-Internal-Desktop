@@ -21,17 +21,17 @@
 </head>
 <body>
 <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer>
+    function onLoad() {
+        gapi.load('auth2', function() {
+            gapi.auth2.init();
+            signOut();
+        });
+    }
     function signOut() {
         var auth2 = gapi.auth2.getAuthInstance();
         auth2.signOut().then(function () {
             console.log('User signed out.');
             window.location.href = "https://tsh.edu.in";
-        });
-    }
-    function onLoad() {
-        gapi.load('auth2', function() {
-            gapi.auth2.init();
-            signOut();
         });
     }
 </script>
