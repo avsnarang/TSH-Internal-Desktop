@@ -20,21 +20,21 @@
     <title>Home - Principal</title>
 </head>
 <body>
-<script>
-    (function signOut() {
+<script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer>
+    function signOut() {
         var auth2 = gapi.auth2.getAuthInstance();
         auth2.signOut().then(function () {
             console.log('User signed out.');
             window.location.href = "https://tsh.edu.in";
         });
-    })();
+    }
     function onLoad() {
         gapi.load('auth2', function() {
             gapi.auth2.init();
+            signOut();
         });
     }
 </script>
-<script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
 <h1>You have successfully logged out!</h1>
 </body>
 </html>
