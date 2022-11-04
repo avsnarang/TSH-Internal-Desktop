@@ -58,11 +58,7 @@
     <a href="/adminOffice/head/reports/about-it-head.php"> About  </a>
     <script>
         function signOut() {
-            var auth2 = gapi.auth2.getAuthInstance();
-            auth2.signOut().then(function () {
-                console.log('User signed out.');
-                window.location.href = "https://tsh.edu.in";
-            });
+            window.location.href = "https://tsh.edu.in/logout.php?logout";
         }
         function onLoad() {
             gapi.load('auth2', function() {
