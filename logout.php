@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +15,7 @@
     <link rel="stylesheet" href="/button_style.css">
     <link rel="stylesheet" href="/homepage_styles.css">
     <meta charset="UTF-8">
+    <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
