@@ -52,13 +52,17 @@
     <a href="/adminOffice/head/it_head.php"> Home </a>
     <a href="/adminOffice/head/reports/head_reports.php"> Reports </a>
     <a href="/adminOffice/head/work/work.php"> Work </a>
-    <a href="/adminOffice/head/about-it-head.php"> About  </a>
+    <a href="/adminOffice/head/reports/about-it-head.php"> About  </a>
     <script>
         function signOut() {
             var auth2 = gapi.auth2.getAuthInstance();
             auth2.signOut().then(function () {
+                <?php
+                    session_start();
+                    session_destroy();
+                    header("Location:https://tsh.edu.in");
+                ?>
                 console.log('User signed out.');
-                window.location.href = "https://tsh.edu.in";
             });
         }
         function onLoad() {
