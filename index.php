@@ -1,9 +1,3 @@
-<?php
-session_start([
-    'cookie_lifetime' => 600,
-    'read_and_close'  => true,
-]);
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
