@@ -58,7 +58,7 @@
     <a href="/adminOffice/head/reports/about-it-head.php"> About  </a>
     <script>
         function signOut() {
-            window.location.href = "https://tsh.edu.in/logout.php?logout";
+            window.location.href = "https://tsh.edu.in/logout.php";
         }
         function onLoad() {
             gapi.load('auth2', function() {
