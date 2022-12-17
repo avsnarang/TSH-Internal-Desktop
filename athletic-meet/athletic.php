@@ -31,7 +31,7 @@ $name = $_POST['U_Name'];
 echo $name;
 if (mysqli_num_rows($result) > 0) {
      while($row = mysqli_fetch_assoc($result)) {
-          if (isset($_POST['submit'])) {
+          if (isset($_POST['Submit'])) {
                if ($name === $row['U_Name']) {
                     echo $row['U_Name'];
                     echo "Name Matched!  --- Entry Fields here...";
