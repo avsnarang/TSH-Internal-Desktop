@@ -28,6 +28,7 @@ $result = mysqli_query($conn, $sql);
 
 <?php
 $name = $_POST['U_Name'];
+echo $name;
 if (mysqli_num_rows($result) > 0) {
      while($row = mysqli_fetch_assoc($result)) {
           if (isset($_POST['submit'])) {
