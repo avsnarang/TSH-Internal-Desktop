@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php
-$conn = new mysqli("localhost","u950483018_scholars","Scholars123","u950483018_athletic");
+$conn = new mysqli("localhost","u950483018_scholars","Scholars123","u950483018_auth_verify");
 
 // Check connection
 if ($conn -> connect_errno) {
@@ -16,7 +16,7 @@ if ($conn -> connect_errno) {
      exit();
 }
 
-$sql = "SELECT U_Name, U_Class FROM athletic_meet";
+$sql = "SELECT U_Name, U_Class FROM best_player";
 $result = mysqli_query($conn, $sql);
 ?>
 
@@ -32,6 +32,7 @@ if (mysqli_num_rows($result) > 0) {
           if (isset($_POST['submit'])) {
                if (isset($_POST['U_Name']) === $row['U_Name']) {
                     echo $row['U_Name'];
+                    echo "Name Matched!  --- Entry Fields here...";
                }
                else {
                     echo "Name not matched!";
