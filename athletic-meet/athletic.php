@@ -27,10 +27,11 @@ $result = mysqli_query($conn, $sql);
      </form>
 
 <?php
+$name = $_POST['U_Name'];
 if (mysqli_num_rows($result) > 0) {
      while($row = mysqli_fetch_assoc($result)) {
           if (isset($_POST['submit'])) {
-               if (isset($_POST['U_Name']) === $row['U_Name']) {
+               if ($name === $row['U_Name']) {
                     echo $row['U_Name'];
                     echo "Name Matched!  --- Entry Fields here...";
                }
