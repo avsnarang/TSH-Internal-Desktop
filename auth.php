@@ -4,8 +4,8 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 // Set the Client ID, Client Secret, and Redirect URI.
-$clientId = '466984422889-jfutq6j8e5v982fep7pn2pgiuh2npgpc.apps.googleusercontent.com';
-$clientSecret = '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';
+$clientId = '584175274872-hlf4ccq2q15ki7ua6h2sanijnind4lj9.apps.googleusercontent.com';
+$clientSecret = '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';
 $redirectUri = 'https://www.tsh.edu.in/auth.php';
 
 // Create the client object and set the authorization configuration
