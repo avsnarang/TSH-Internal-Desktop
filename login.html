@@ -15,10 +15,10 @@
       // Get the user's email address
       var email = profile.getEmail();
       // Redirect the user to a different page based on their email address
-      if (email.endsWith('@example.com')) {
-        window.location.href = 'http://example.com/example-page';
+      if (email == 'admin@tsh.edu.in') {
+        window.location.href = 'http://www.tsh.edu.in/adminOffice/head/it_head.php';
       } else {
-        window.location.href = 'http://example.com/other-page';
+        window.location.href = 'http://www.tsh.edu.in/wrong.php';
       }
     }
   </script>
