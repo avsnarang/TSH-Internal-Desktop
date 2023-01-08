@@ -1,30 +1,26 @@
 <html>
      <head>
-          <script src="https://apis.google.com/js/api.js"></script>
+          <script src="https://apis.google.com/js/platform.js" async defer></script>
      </head>
 <body>
-  <!-- Add a login button -->
-  <button id="login-button">Login with Google</button>
-
-  <!-- Load the Google API client library -->
-  <script src="https://apis.google.com/js/api.js"></script>
+  <!-- Add a Google Sign-In button -->
+  <div class="g-signin2" data-onsuccess="onSignIn"></div>
 
   <!-- Your application bootstrapping code -->
   <script>
-    gapi.load('auth2', function() {
-      // Initialize the auth2 library
-      auth2 = gapi.auth2.init({
-        client_id: '584175274872-hlf4ccq2q15ki7ua6h2sanijnind4lj9.apps.googleusercontent.com',
-        scope: 'email',
-        redirect_uri: 'http://www.tsh.edu.in/auth.php'
-      });
-
-      // Attach the click event handler to the login button
-      document.getElementById('login-button').addEventListener('click', function() {
-        // Sign the user in
-        auth2.signIn();
-      });
-    });
+    // The onSignIn function is called when the user successfully signs in
+    function onSignIn(googleUser) {
+      // Get the user's profile
+      var profile = googleUser.getBasicProfile();
+      // Get the user's email address
+      var email = profile.getEmail();
+      // Redirect the user to a different page based on their email address
+      if (email.endsWith('@example.com')) {
+        window.location.href = 'http://example.com/example-page';
+      } else {
+        window.location.href = 'http://example.com/other-page';
+      }
+    }
   </script>
 </body>
 </html>
