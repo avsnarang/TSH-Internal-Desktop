@@ -4,9 +4,9 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 // Set the Client ID, Client Secret, and Redirect URI.
-$clientId = 'YOUR_CLIENT_ID';
-$clientSecret = 'YOUR_CLIENT_SECRET';
-$redirectUri = 'YOUR_REDIRECT_URI';
+$clientId = '466984422889-jfutq6j8e5v982fep7pn2pgiuh2npgpc.apps.googleusercontent.com';
+$clientSecret = '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';
+$redirectUri = 'https://www.tsh.edu.in/auth.php';
 
 // Create the client object and set the authorization configuration
 // from the client_secret.json you downloaded from the Developer Console.
@@ -31,8 +31,8 @@ $user = $service->userinfo->get();
 $email = $user->email;
 
 // Redirect the user to a different page based on their email address.
-if (strpos($email, '@example.com') !== false) {
-  header('Location: http://example.com/example-page');
+if (strpos($email, 'admin@tsh.edu.in') !== false) {
+  header('Location: http://www.tsh.edu.in/adminOffice/head/it_head.php');
 } else {
-  header('Location: http://example.com/other-page');
+  header('Location: http://www.tsh.edu.in/wrong.php');
 }
