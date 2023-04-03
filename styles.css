@@ -5,10 +5,25 @@
   box-sizing: border-box;
   user-select: none;
 }
+.feedback_block{
+  color: rgb(204, 109, 0);
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  right: 30%;
+  z-index: 999;
+  text-align: center;
+  padding: 30px 20px;
+  width: 400px;
+  transform: translate(-50%,-50%);
+  background-color: rgba(255, 255, 255, 0.925);
+  box-shadow: -1px 0px 15px 0px rgba(255, 162, 22, 0.63);
+}
 .content{
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 30%;
+  right: 70%;
   z-index: 999;
   text-align: center;
   padding: 60px 32px;
